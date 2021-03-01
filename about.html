@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 130px;
+  text-align: right;
+  color: black;
+  background-image: url('troynyu.jpg');
+   background-size: 1400px 400px;
+}
+
+/* Increase the font size of the heading */
+
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right{
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: white;
+  padding: 20px;
+  font-size: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+</div>
+
+<div class="navbar">
+<a href="index.html"style="font-size: larger;">Home</a>
+<a href="about.html"style="font-size: larger;">About Me</a>
+<a href="educational.html"style="font-size: larger;">Educational</a>
+<a href="contact.html"style="font-size: larger;">Contact</a>
+</div>
+
+
+<div class="row">
+  <div class="side">
+    <h2><b>Personal Data</b></h2>
+    <p>Name: JOHN TROY ASIADO</p>
+    <p>Address: New Danglayan Bauan Batangas</p>
+    <p>Contact No: 09150288924</p>
+    <p>Birthdate: December 1, 1999</p>
+    <p>Age: 21</p>
+    <p>Email:  asiadojohntroy14@yahoo.com</p>
+     <p>Mother: Amy Asiado</p>
+      <p>Father: Romeo Asiado</p>
+    <p>Bachelor In Information Technology Major in Business Analytics</p>
+    <img src="wala.jpg" alt="That was me!" width="300" height="300">
+   <p>“Challenges are what make life interesting and overcoming them is what makes life meaningful.”
+– Joshua J. Marine”</p>
+  </div>
+  <div class="main">
+    <h2>My Team BSUMVT</h2>
+    <img src="team1.jpg"width="700" height="400">
+    <h2>VIDEO!</h2>
+    <p>Here is some of my Highlights!</p>
+    <video width="600" height="300" controls>
+  <source src="troyan.mp4" type="video/mp4">
+  <source src="troyan.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+<h3>VIDEO!</h3>
+    <p>Here is some of my Highlights!</p>
+    <video width="600" height="300" controls>
+  <source src="troyan1.mp4" type="video/mp4">
+  <source src="troyan1.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+    <p>““The principle is competing against yourself. It’s about self-improvement, about being better than you were the day before.”
+– Steve Young</p>
+    <p></p>
+  </div>
+</div>
+
+
+</body>
+</html>
